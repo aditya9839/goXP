@@ -21,7 +21,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sign Up"
+                android:text="@string/sign_up"
                 android:textColor="@color/black"
                 android:padding="@dimen/_10sdp"
                 android:textSize="@dimen/_14sdp"
@@ -38,20 +38,21 @@
                 android:layout_width="@dimen/_34sdp"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
                 android:background="@color/white"
-                android:text="X"
+                android:text="@string/x"
                 android:textColor="@color/grey"
                 android:textSize="@dimen/_11sdp" />
         </LinearLayout>
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_weight="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
                 android:orientation="vertical">
 
 
@@ -67,7 +68,7 @@
                         android:id="@+id/signupfullname"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Full Name"
+                        android:hint="@string/full_name"
                         android:inputType="textPersonName"
                         android:textSize="@dimen/_12sdp" />
                 </android.support.design.widget.TextInputLayout>
@@ -84,7 +85,7 @@
                         android:id="@+id/input_email"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Email"
+                        android:hint="@string/email"
                         android:inputType="textEmailAddress"
                         android:textSize="@dimen/_12sdp" />
                 </android.support.design.widget.TextInputLayout>
@@ -101,7 +102,7 @@
                         android:id="@+id/input_password"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Password"
+                        android:hint="@string/password"
                         android:inputType="textPassword"
                         android:textSize="@dimen/_12sdp" />
                 </android.support.design.widget.TextInputLayout>
@@ -118,7 +119,7 @@
                         android:id="@+id/input_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Confirm Password"
+                        android:hint="@string/confirm_password"
                         android:inputType="textPassword"
                         android:textSize="@dimen/_12sdp" />
                 </android.support.design.widget.TextInputLayout>
@@ -128,7 +129,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="@dimen/_12sdp"
-                    android:text="Forgot Password?"
+                    android:text="@string/forgot_password"
                     android:textColor="@color/exp1"
                     android:textSize="@dimen/_12sdp" />
 
@@ -139,7 +140,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="@dimen/_25sdp"
                     android:background="@drawable/sign_up_button_of_fragment"
-                    android:text="Sign Up"
+                    android:text="@string/sign_up"
                     android:textColor="@color/white" />
             </LinearLayout>
         </ScrollView>

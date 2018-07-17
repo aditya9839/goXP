@@ -18,7 +18,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Enter OTP"
+                android:text="@string/enter_otp"
                 android:textColor="@color/black"
                 android:padding="@dimen/_10sdp"
                 android:textSize="@dimen/_14sdp"
@@ -35,8 +35,9 @@
                 android:layout_width="@dimen/_34sdp"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
                 android:background="@color/white"
-                android:text="X"
+                android:text="@string/x"
                 android:textColor="@color/grey"
                 android:textSize="@dimen/_11sdp" />
         </LinearLayout>
@@ -55,7 +56,7 @@
                     android:fontFamily="sans-serif-medium"
                     android:textStyle="normal"
                     android:textColor="#a3000000"
-                    android:text="Please enter OTP sent to +91 92******69"
+                    android:text="@string/descrip_please_enter_otp"
                     android:textSize="@dimen/_12sdp"
                     android:padding="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_15sdp"/>
@@ -65,9 +66,10 @@
                     android:fontFamily="sans-serif-medium"
                     android:textStyle="normal"
                     android:textColor="#274bff"
-                    android:text="Not my account"
+                    android:text="@string/not_my_account"
                     android:textSize="@dimen/_11sdp"
                     android:paddingLeft="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_10sdp"
                     android:layout_marginTop="0dp"/>
                 <LinearLayout
                     android:layout_width="300sp"
@@ -81,16 +83,18 @@
                         android:textAlignment="center"
                         android:layout_height="@dimen/_40sdp"
                         android:inputType="number"
-                        android:hint="0"
+                        android:hint="@string/_0"
                         android:layout_weight="1"
                         android:maxLength="1"
                         android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
                         android:background="#e4e4e4"/>
                     <EditText
                         android:id="@+id/e2"
                         android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
                         android:layout_weight="1"
-                        android:hint="0"
+                        android:hint="@string/_0"
                         android:maxLength="1"
                         android:textAlignment="center"
                         android:layout_width="wrap_content"
@@ -100,9 +104,10 @@
                     <EditText
                         android:id="@+id/e3"
                         android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
                         android:layout_weight="1"
                         android:maxLength="1"
-                        android:hint="0"
+                        android:hint="@string/_0"
                         android:textAlignment="center"
                         android:layout_width="wrap_content"
                         android:layout_height="@dimen/_40sdp"
@@ -115,14 +120,16 @@
                         android:maxLength="1"
                         android:layout_height="@dimen/_40sdp"
                         android:layout_marginLeft="@dimen/_10sdp"
-                        android:hint="0"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:hint="@string/_0"
                         android:textAlignment="center"
                         android:inputType="number"
                         android:background="#e4e4e4"/>
                     <EditText
                         android:id="@+id/e5"
                         android:layout_marginLeft="@dimen/_10sdp"
-                        android:hint="0"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:hint="@string/_0"
                         android:maxLength="1"
                         android:layout_weight="1"
                         android:textAlignment="center"
@@ -132,8 +139,9 @@
                         android:background="#e4e4e4"/>
                     <EditText
                         android:id="@+id/e6"
-                        android:hint="0"
+                        android:hint="@string/_0"
                         android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
                         android:textAlignment="center"
                         android:layout_weight="1"
                         android:maxLength="1"
@@ -149,7 +157,7 @@
                     android:layout_height="@dimen/_40sdp"
                     android:layout_gravity="center"
                     android:layout_marginTop="@dimen/_45sdp"
-                    android:text="Submit"
+                    android:text="@string/submit"
                     android:fontFamily="sans-serif"
                     android:textStyle="normal"
                     android:textColor="#ffffff"
@@ -158,12 +166,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingLeft="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_10sdp"
                     android:fontFamily="sans-serif-medium"
                     android:textStyle="normal"
                     android:textSize="@dimen/_11sdp"
                     android:layout_marginTop="25dp"
                     android:textColor="#a3000000"
-                    android:text="Didn't recieved OTP?"/>
+                    android:text="@string/didn_t_recieved_otp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -174,7 +183,7 @@
                     android:textSize="@dimen/_11sdp"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:textColor="#274bff"
-                    android:text="Get a call"/>
+                    android:text="@string/get_a_call"/>
 
             </LinearLayout>
         </ScrollView>

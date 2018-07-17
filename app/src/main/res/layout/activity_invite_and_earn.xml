@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
@@ -20,15 +19,14 @@
             android:textColor="#de000000"
             android:textSize="@dimen/_18sdp"
             android:layout_marginTop="@dimen/_18sdp"
-            android:text="INVITE YOUR FRIENDS"/>
+            android:text="@string/invite_your_friends"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="with invite code"
+            android:text="@string/with_invite_code"
             android:textColor="#8c000000"
             android:layout_marginTop="@dimen/_7sdp"
-            android:layout_below="@+id/inviteyourfriends"
             android:textSize="@dimen/_18sdp"/>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -44,40 +42,40 @@
                 android:shadowDy="3"
                 android:textColor="#ff4e00"
                 android:background="@color/white"
-                android:text="MAKK4568CA"
+                android:text="@string/invite_code"
                 android:shadowColor="#29000000"
                 android:textSize="@dimen/_17sdp" />
             <ImageView
+                android:id="@+id/copy"
                 android:layout_width="@dimen/_39sdp"
                 android:background="#a2a2a2"
                 android:src="@drawable/copy"
                 android:padding="5dp"
-                android:layout_marginLeft="2dp"
                 android:layout_height="@dimen/_39sdp" />
         </LinearLayout>
         <TextView
             android:layout_width="wrap_content"
             android:paddingTop="@dimen/_12sdp"
             android:paddingRight="@dimen/_12sdp"
+            android:paddingEnd="@dimen/_12sdp"
             android:paddingLeft="@dimen/_17sdp"
+            android:paddingStart="@dimen/_17sdp"
             android:fontFamily="sans-serif"
             android:shadowColor="#29000000"
             android:textColor="#ba000000"
             android:lineSpacingExtra="@dimen/_3sdp"
             android:shadowDy="3"
             android:shadowRadius="6"
-            android:text="Earn money by referring this app to your friends.Use the referral code and ₹ 500 on per signup."
+            android:paddingBottom="@dimen/_20sdp"
+            android:text="@string/descrip_earn_money"
             android:layout_height="wrap_content" />
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_marginTop="@dimen/_22sdp"
-            android:layout_height="wrap_content"></LinearLayout>
+
     </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="INVITE USING"
+        android:text="@string/invite_using"
         android:textSize="@dimen/_11sdp"
         android:padding="5dp"
         android:layout_gravity="center"
@@ -101,13 +99,13 @@
             android:lineSpacingExtra="@dimen/_3sdp"
             android:shadowDy="3"
             android:shadowRadius="6"
-            android:text="You can earn up to ₹ 2000 this month."
+            android:text="@string/decrip_you_can_earn"
             android:layout_height="wrap_content" />
         <Button
             android:layout_width="@dimen/_252sdp"
             android:layout_height="@dimen/_46sdp"
             android:background="#0f9d58"
-            android:text="Share via WhatsApp"
+            android:text="@string/share_via_whatsapp"
             android:fontFamily="sans-serif-medium"
             android:textStyle="normal"
             android:textColor="#ffffff"
@@ -123,7 +121,7 @@
             android:textAlignment="center"
             android:shadowDy="4"
             android:shadowRadius="6"
-            android:text="Share your code with your WhatsApp groups and friends. Get paid on every signup."
+            android:text="@string/decrip_share_code"
             android:layout_height="wrap_content"
             android:paddingTop="@dimen/_12sdp"/>
         <RelativeLayout
@@ -140,7 +138,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="OR"
+                android:text="@string/or"
                 android:padding="@dimen/_5sdp"
                 android:fontFamily="sans-serif"
                 android:layout_centerInParent="true"
@@ -155,10 +153,13 @@
             android:shadowColor="#29000000"
             android:textColor="#ba000000"
             android:paddingLeft="@dimen/_17sdp"
+            android:paddingRight="@dimen/_17sdp"
+            android:paddingStart="@dimen/_17sdp"
+            android:paddingEnd="@dimen/_17sdp"
             android:lineSpacingExtra="@dimen/_3sdp"
             android:shadowDy="4"
             android:shadowRadius="6"
-            android:text="Scan QR code"
+            android:text="@string/scan_qr_code"
             android:layout_height="wrap_content"
             android:paddingTop="@dimen/_12sdp"/>
     </LinearLayout>

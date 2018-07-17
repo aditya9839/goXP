@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
+    android:background="#fbfbfb"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
-    <RelativeLayout
-        android:id="@+id/test"
-        android:background="#fbfbfb"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
     <RelativeLayout
         android:id="@+id/congratulationLayout"
         android:layout_width="match_parent"
@@ -22,7 +18,7 @@
             android:textColor="@color/white"
             android:layout_marginTop="@dimen/_70sdp"
             android:fontFamily="sans-serif"
-            android:text="Congratulations"/>
+            android:text="@string/congratulations"/>
     </RelativeLayout>
     <TextView
         android:layout_marginTop="@dimen/_15sdp"
@@ -45,14 +41,13 @@
         android:layout_below="@id/bookingText"
         android:textStyle="normal"
         android:textColor="#7d57c0"
-        android:letterSpacing="0.01"
         android:lineSpacingExtra="@dimen/_2sdp"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginLeft="@dimen/_15sdp"
         android:layout_marginRight="@dimen/_15sdp"
         android:layout_marginBottom="@dimen/_15sdp"
         android:textSize="@dimen/_14sdp"
-        android:text="Okay, I understand"/>
+        android:text="@string/okay_i_understand"/>
         </RelativeLayout>
 
-</RelativeLayout>
