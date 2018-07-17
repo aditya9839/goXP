@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/search"
+            android:icon="@drawable/search"
+            android:title="Search" />
+        <item
+            android:id="@+id/appointments"
+            android:icon="@drawable/portrait"
+            android:title="Appointments" />
+        <item
+            android:id="@+id/notifications"
+            android:icon="@drawable/notifications"
+            android:title="Notifications" />
+        <item
+            android:id="@+id/aboutGoXP"
+            android:icon="@drawable/about"
+            android:title="About GoXP" />
+        <item
+            android:id="@+id/support"
+            android:icon="@drawable/info"
+            android:title="Support" />
+        <item
+            android:id="@+id/referafriend"
+            android:icon="@drawable/baseline_people_24"
+            android:title="Refer a friend" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/book_an_appointment"
+            android:title="Book An Appointment" />
+
+        <item
+            android:id="@+id/login_signup_page"
+            android:title="Login / Signup" />
+        <item
+            android:id="@+id/otp"
+            android:title="OTP" />
+        <item
+            android:id="@+id/card"
+            android:title="Cards" />
+        <item
+            android:id="@+id/sign_up"
+            android:title="Sign Up" />
+        <item
+            android:id="@+id/login"
+            android:title="Login" />
+        <item
+            android:id="@+id/invite_and_earn"
+            android:title="Invite And Earn" />
+        <item
+            android:id="@+id/dashboard"
+            android:title="Dashboard" />
+    </group>
+</menu>

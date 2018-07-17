@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">GooXpp</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="appointment_booked">You have booked an appointment with Dr. Shrey Dhawan on Mon, 9 Jul 2018 at 1:45 AM in Chitra Vihar. Please be on time to save the time of the doctor and lives of people. </string>
+    <string-array name="gender">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+
+</resources>

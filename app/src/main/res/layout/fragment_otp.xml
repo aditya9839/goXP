@@ -1,0 +1,183 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.acer.gooxpp.Otp"
+    android:background="@color/black">
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:orientation="vertical"
+        android:background="@drawable/loginlayout">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter OTP"
+                android:textColor="@color/black"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"/>
+            <!-- ADDED SPACER VIEW -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/closebuttonotp"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="@dimen/_34sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@color/white"
+                android:text="X"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_11sdp" />
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:textColor="#a3000000"
+                    android:text="Please enter OTP sent to +91 92******69"
+                    android:textSize="@dimen/_12sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_15sdp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:textColor="#274bff"
+                    android:text="Not my account"
+                    android:textSize="@dimen/_11sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:layout_marginTop="0dp"/>
+                <LinearLayout
+                    android:layout_width="300sp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_40sdp">
+                    <EditText
+                        android:id="@+id/e1"
+                        android:layout_width="wrap_content"
+                        android:textAlignment="center"
+                        android:layout_height="@dimen/_40sdp"
+                        android:inputType="number"
+                        android:hint="0"
+                        android:layout_weight="1"
+                        android:maxLength="1"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:background="#e4e4e4"/>
+                    <EditText
+                        android:id="@+id/e2"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:hint="0"
+                        android:maxLength="1"
+                        android:textAlignment="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_40sdp"
+                        android:inputType="number"
+                        android:background="#e4e4e4"/>
+                    <EditText
+                        android:id="@+id/e3"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:textAlignment="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_40sdp"
+                        android:inputType="number"
+                        android:background="#e4e4e4"/>
+                    <EditText
+                        android:id="@+id/e4"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:maxLength="1"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:hint="0"
+                        android:textAlignment="center"
+                        android:inputType="number"
+                        android:background="#e4e4e4"/>
+                    <EditText
+                        android:id="@+id/e5"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:hint="0"
+                        android:maxLength="1"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_40sdp"
+                        android:inputType="number"
+                        android:background="#e4e4e4"/>
+                    <EditText
+                        android:id="@+id/e6"
+                        android:hint="0"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:maxLength="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_40sdp"
+                        android:inputType="number"
+                        android:background="#e4e4e4"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_45sdp"
+                    android:text="Submit"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/submitotpbutton"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_marginTop="25dp"
+                    android:textColor="#a3000000"
+                    android:text="Didn't recieved OTP?"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="#274bff"
+                    android:text="Get a call"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

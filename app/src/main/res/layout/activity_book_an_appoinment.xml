@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.acer.gooxpp.BookAnAppoinment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layoutPatientName"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:theme="@style/TextLabelBooking"
+        app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/patientName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:hint="Patient's Name"
+            android:inputType="textPersonName"
+            android:paddingBottom="@dimen/_20sdp"
+            android:textSize="@dimen/_12sdp"/>
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/patientMoblieNoLayout"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@+id/layoutPatientName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:theme="@style/TextLabelBooking"
+        app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/patientmobileno"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="sans-serif-medium"
+            android:paddingBottom="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile No."
+            android:inputType="phone">
+        </android.support.design.widget.TextInputEditText>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:baselineAligned="false"
+        android:id="@+id/genAgeLayout"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/patientMoblieNoLayout"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:background="@drawable/bg_spinner"
+            android:layout_height="wrap_content">
+            <Spinner
+                style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                android:id="@+id/spinner1"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:spinnerMode="dialog"/>
+        </RelativeLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/ageLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:theme="@style/TextLabelBooking"
+            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/age"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="sans-serif-medium"
+                android:paddingBottom="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Age"
+                android:inputType="numberSigned">
+            </android.support.design.widget.TextInputEditText>
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:baselineAligned="false"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/dateTimeLayout"
+        android:layout_below="@+id/genAgeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/dateLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:theme="@style/TextLabelBooking"
+            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/dateee"
+                android:focusable="false"
+                android:textSize="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_20sdp"
+                android:fontFamily="sans-serif-medium"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date"
+                android:inputType="textEmailAddress">
+            </android.support.design.widget.TextInputEditText>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/timeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:theme="@style/TextLabelBooking"
+            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:fontFamily="sans-serif-medium"
+
+                android:hint="Time"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="@dimen/_15sdp"
+                android:textSize="@dimen/_15sdp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@+id/dateTimeLayout"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/appointmentWithLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:theme="@style/TextLabelBooking"
+        app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/appointmentWith"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:hint="Appointment with"
+            android:inputType="textPersonName"
+            android:paddingBottom="@dimen/_15sdp"
+            android:textSize="@dimen/_15sdp"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/appointmentFeeTextView"
+        android:layout_below="@+id/appointmentWithLayout"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="Appointment Fee"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="#b3b3b3"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/paymentRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/appointmentFeeTextView">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pay Now"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_100sdp"
+            android:text="Pay Later"/>
+    </RadioGroup>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paymentRadioGroup"
+        android:text="I agree to Terms and Conditions"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_10sdp"/>
+    </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/book"
+        android:layout_width="match_parent"
+        android:background="@color/blue"
+        android:layout_alignParentBottom="true"
+        android:text="BOOK APPOINTMENT"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-medium"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

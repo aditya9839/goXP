@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1018056468327",
+    "firebase_url": "https://gooxpp.firebaseio.com",
+    "project_id": "gooxpp",
+    "storage_bucket": "gooxpp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1018056468327:android:5ad613042e4472bb",
+        "android_client_info": {
+          "package_name": "com.example.acer.gooxpp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1018056468327-po0loc2op9dc630tc7mhjn9d3bp0esrg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsKN6RePfn10l864g7pNIYF3XNv11LI-Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
