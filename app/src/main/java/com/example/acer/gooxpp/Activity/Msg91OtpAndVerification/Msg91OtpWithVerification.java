@@ -1,4 +1,4 @@
-package com.example.acer.gooxpp.Msg91OtpAndVerification;
+package com.example.acer.gooxpp.Activity.Msg91OtpAndVerification;
 
 import android.Manifest;
 import android.content.Context;

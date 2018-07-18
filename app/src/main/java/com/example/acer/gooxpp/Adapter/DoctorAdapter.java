@@ -1,4 +1,4 @@
-package com.example.acer.gooxpp;
+package com.example.acer.gooxpp.Adapter;
 
 import android.content.Context;
 import android.os.Build;
@@ -8,6 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.acer.gooxpp.Model.Doctors;
+import com.example.acer.gooxpp.R;
 
 import java.util.List;
 

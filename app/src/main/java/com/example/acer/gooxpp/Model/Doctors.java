@@ -1,4 +1,4 @@
-package com.example.acer.gooxpp;
+package com.example.acer.gooxpp.Model;
 
 /**
  * Created by acer on 23-Jun-18.

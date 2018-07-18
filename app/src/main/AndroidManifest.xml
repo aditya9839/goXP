@@ -10,6 +10,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".Application.GoXPApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -21,7 +22,7 @@
             android:value="AIzaSyB0LfX2Hf9NdoJtaDbbOmw3dFRVfj-GpZc" />
 
         <activity
-            android:name=".MainActivity"
+            android:name=".Activity.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
 
@@ -33,10 +34,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".BookAnAppoinment"
+            android:name=".Activity.BookAnAppoinment"
             android:label="Book An Appoinment" />
-        <activity android:name=".Msg91OtpAndVerification.Msg91OtpWithVerification" />
-        <activity android:name=".Msg91OtpAndVerification.VerificationActivity"></activity>
+        <activity android:name=".Activity.Msg91OtpAndVerification.Msg91OtpWithVerification" />
+        <activity android:name=".Activity.Msg91OtpAndVerification.VerificationActivity"></activity>
 
         <meta-data
             android:name="sendotp.key"
