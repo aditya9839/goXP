@@ -2,8 +2,10 @@ package com.example.acer.gooxpp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,6 +15,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.example.acer.gooxpp.Msg91OtpAndVerification.Msg91OtpWithVerification;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -84,7 +88,7 @@ public class MainActivity extends AppCompatActivity
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
@@ -128,6 +132,13 @@ public class MainActivity extends AppCompatActivity
             transaction = fragmentManager.beginTransaction();
             transaction.replace(R.id.parent_content, doctorList).addToBackStack(null).commit();
         }
+        else if (id == R.id.lat_lang){
+            CurrentLocation.getLastKnownLocation(this);
+        }
+        else if (id == R.id.Msg91){
+            Intent intent = new Intent(MainActivity.this, Msg91OtpWithVerification.class);
+            startActivity(intent);
+        }
 
 //        } else if (id == R.id.nav_send) {
 //
@@ -137,4 +148,17 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        //result of current location
+        if (requestCode == CurrentLocation.REQUEST_LOCATION){
+            Log.d("Asdas","asd");
+            CurrentLocation.getLastKnownLocation(this);
+        }
+
+    }
+
 }

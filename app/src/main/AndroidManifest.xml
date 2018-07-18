@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.acer.gooxpp">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,11 +18,12 @@
         android:theme="@style/AppTheme">
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyB0LfX2Hf9NdoJtaDbbOmw3dFRVfj-GpZc"/>
+            android:value="AIzaSyB0LfX2Hf9NdoJtaDbbOmw3dFRVfj-GpZc" />
+
         <activity
             android:name=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
 
             <!-- scroll screen -->
             <intent-filter>
@@ -24,13 +31,17 @@
 
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
-
         </activity>
-
-
         <activity
             android:name=".BookAnAppoinment"
             android:label="Book An Appoinment" />
+        <activity android:name=".Msg91OtpAndVerification.Msg91OtpWithVerification" />
+        <activity android:name=".Msg91OtpAndVerification.VerificationActivity"></activity>
+
+        <meta-data
+            android:name="sendotp.key"
+            android:value="@string/sendotp_key" />
+
     </application>
 
 </manifest>
