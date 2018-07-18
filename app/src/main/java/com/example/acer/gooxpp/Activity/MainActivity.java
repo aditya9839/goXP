@@ -22,7 +22,7 @@ import com.example.acer.gooxpp.Activity.Msg91OtpAndVerification.Msg91OtpWithVeri
 import com.example.acer.gooxpp.Permission.CurrentLocation;
 import com.example.acer.gooxpp.R;
 
-public class MainActivity extends AppCompatActivity
+public class MainActivity extends BaseActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     android.support.v4.app.FragmentManager fragmentManager;

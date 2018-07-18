@@ -19,7 +19,7 @@ import com.example.acer.gooxpp.R;
 
 import java.util.Calendar;
 
-public class BookAnAppoinment extends AppCompatActivity {
+public class BookAnAppoinment extends BaseActivity {
 
     TextInputEditText mdate,mtime;
     TextInputLayout mdateLayout,mtimeLayout;
