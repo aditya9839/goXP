@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="0dip"
-    tools:context=".Msg91OtpAndVerification.Msg91OtpWithVerification">
+    tools:context=".Activity.Msg91OtpAndVerification.Msg91OtpWithVerification">
 
     <LinearLayout
         android:id="@+id/numberInputLayout"

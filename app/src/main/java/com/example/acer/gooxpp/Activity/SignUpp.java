@@ -1,4 +1,4 @@
-package com.example.acer.gooxpp;
+package com.example.acer.gooxpp.Activity;
 
 
 import android.app.Activity;
@@ -12,6 +12,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
+
+import com.example.acer.gooxpp.Activity.Otp;
+import com.example.acer.gooxpp.R;
 
 
 /**

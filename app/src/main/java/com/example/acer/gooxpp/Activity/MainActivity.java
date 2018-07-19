@@ -1,4 +1,4 @@
-package com.example.acer.gooxpp;
+package com.example.acer.gooxpp.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,9 +16,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.example.acer.gooxpp.Msg91OtpAndVerification.Msg91OtpWithVerification;
 
-public class MainActivity extends AppCompatActivity
+import com.example.acer.gooxpp.Activity.Msg91OtpAndVerification.Msg91OtpWithVerification;
+
+import com.example.acer.gooxpp.Permission.CurrentLocation;
+import com.example.acer.gooxpp.R;
+
+public class MainActivity extends BaseActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     android.support.v4.app.FragmentManager fragmentManager;

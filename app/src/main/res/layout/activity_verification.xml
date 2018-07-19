@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="0dip"
-    tools:context=".Msg91OtpAndVerification.VerificationActivity">
+    tools:context=".Activity.Msg91OtpAndVerification.VerificationActivity">
 
 
 

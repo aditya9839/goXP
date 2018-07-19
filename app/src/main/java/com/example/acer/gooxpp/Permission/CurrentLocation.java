@@ -1,4 +1,4 @@
-package com.example.acer.gooxpp;
+package com.example.acer.gooxpp.Permission;
 
 import android.Manifest;
 import android.app.Activity;
@@ -26,10 +26,10 @@ import com.google.android.gms.location.LocationSettingsStatusCodes;
 import java.util.List;
     //optimized code to getCurrent location or last known location but it will work if gps is on
 
-class CurrentLocation {
+public class CurrentLocation {
 
-private static GoogleApiClient googleApiClient;
-final static int REQUEST_LOCATION = 199;
+public static GoogleApiClient googleApiClient;
+public  final static int REQUEST_LOCATION = 199;
     static double d = 0,d1 = 0;
 private static LocationManager mLocationManager;
 private static Activity parentActivity;

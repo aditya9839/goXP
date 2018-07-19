@@ -1,4 +1,4 @@
-package com.example.acer.gooxpp;
+package com.example.acer.gooxpp.Activity;
 
 
 import android.content.DialogInterface;
@@ -12,6 +12,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.example.acer.gooxpp.Adapter.DoctorAdapter;
+import com.example.acer.gooxpp.Model.Doctors;
+import com.example.acer.gooxpp.R;
 
 import java.util.ArrayList;
 import java.util.List;

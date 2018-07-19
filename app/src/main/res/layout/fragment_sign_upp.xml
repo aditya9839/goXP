@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/signuppfragmentlayout"
-    tools:context="com.example.acer.gooxpp.SignUpp"
+    tools:context="com.example.acer.gooxpp.Activity.SignUpp"
     android:background="@color/black">
 
     <LinearLayout
