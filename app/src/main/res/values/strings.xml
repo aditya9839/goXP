@@ -66,26 +66,24 @@
     <string name="support">Support</string>
     <string name="refer_a_friend">Refer a friend</string>
     <string name="logout">Logout</string>
-    <string name="communicate">Communicate</string>
     <string name="book_an_appointment">Book An Appointment</string>
-    <string name="login_signup">Login / Signup</string>
-    <string name="otp">OTP</string>
     <string name="cards">Cards</string>
-    <string name="invite_and_earn">Invite And Earn</string>
     <string name="dashboard">Dashboard</string>
     <string name="modules">Modules</string>
 
     <string name="enterphonenumber">Enter your phone number</string>
-    <string name="selectcountry">Select country</string>
-    <string name="sending_sms">We\'re sending an sms to</string>
-    <string name="inprogress">Verification in\nprogress</string>
     <string name="verified">Verification successful</string>
     <string name="failed">Verification failed</string>
-    <string name="entercode">Please enter the code you received</string>
     <string name="current_lat_lang">Current Lat/Lang</string>
 
     <string name="sendotp_key">222726AVyhX30Cnpch5b33136a</string>
-
+    <string name="sms_verification">SMS Verification</string>
+    <string name="sending_sms">Sending SMS</string>
+    <string name="enter_number">Enter Number</string>
+    <string name="_46123456789">+46123456789</string>
+    <string name="enter">Enter</string>
+    <string name="resend_via_call">Resend via call ()</string>
+    <string name="in_progerss">In Progerss</string>
 
 
     <string-array name="gender">

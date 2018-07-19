@@ -60,7 +60,7 @@
             android:minHeight="56dp"
             android:minWidth="132dp"
             android:onClick="onButtonClicked"
-            android:text="SMS Verification"
+            android:text="@string/sms_verification"
             android:textAllCaps="true"
             android:textColor="#ffffff"
             android:textSize="20sp"/>
