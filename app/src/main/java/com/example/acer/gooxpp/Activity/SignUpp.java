@@ -22,10 +22,12 @@ import com.example.acer.gooxpp.Adapter.User;
 import com.example.acer.gooxpp.R;
 import com.google.gson.Gson;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
+import java.util.Iterator;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -104,12 +106,52 @@ public class SignUpp extends Fragment {
                                 } else {
                                     try {
                                         JSONObject jsonObject = new JSONObject(response.errorBody().string());
-                                        Log.d("body", "" + jsonObject);
+                                        jsonObject = jsonObject.getJSONObject("data");
+
+                                        Iterator<String> iter = jsonObject.keys();
+                                        while (iter.hasNext()) {
+                                            String key = iter.next();
+                                            try {
+                                                Log.d("MSG",jsonObject.getJSONArray(key).optString(0));
+                                                String msg = jsonObject.getJSONArray(key).optString(0);
+                                                if (msg.equals("The c password and password must match.")){
+                                                    mconfirmpass.setError("password does not match");
+                                                }
+                                                if (msg.equals("The email must be a valid email address.")){
+//                                                    Toast.makeText(getContext(), "The email must be a valid email address.", Toast.LENGTH_SHORT).show();
+                                                    memail.setError("please enter valid email address");
+                                                    memail.getError();
+                                                }
+                                            } catch (JSONException e) {
+                                                e.printStackTrace();
+                                            }
+                                        }
                                     } catch (JSONException e) {
                                         e.printStackTrace();
                                     } catch (IOException e) {
                                         e.printStackTrace();
                                     }
+                                    finally {
+                                        // To write if something unexpected occurs
+                                        // Just show message something went wrong
+                                    }
+
+//                                        JSONObject jsonObject = new JSONObject(response.errorBody().string());
+//                                        boolean success =  jsonObject.optBoolean("success");
+//                                        JSONObject data =  jsonObject.getJSONObject("data");
+//                                        String c_password = data.getString("c_password");
+//                                        JSONArray arr = new JSONArray(c_password);
+//                                        JSONObject jsonPart = arr.getJSONObject(0);
+//                                        JSONArray email =  jsonObject.getJSONArray("email");
+
+//                                        Log.d("Success Result",""+success);
+//                                        Log.d("data",""+data+"c_password  ::"+jsonPart.toString());
+//                                        Log.d("body", "" + jsonObject+"Email  "+email);
+//                                    } catch (JSONException e) {
+//                                        e.printStackTrace();
+//                                    } catch (IOException e) {
+//                                        e.printStackTrace();
+//                                    }
 
 //                            Log.d("ERR",responseUser.getMessage());
                                     Log.d("error", "" + String.format("Response is %s", String.valueOf(response.code())));
@@ -140,7 +182,7 @@ public class SignUpp extends Fragment {
 //                transaction = fragmentManager.beginTransaction();
                 transaction.setCustomAnimations(R.anim.enter, R.anim.exit, R.anim.pop_enter, R.anim.pop_exit);
 //                transaction.replace(R.id.parent_content, otp).addToBackStack(null).commit();
-                transaction.replace(R.id.loginn, otp).commit();
+//                transaction.replace(R.id.loginn, otp).commit();
 
             }
         });
