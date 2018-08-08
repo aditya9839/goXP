@@ -11,7 +11,6 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -96,6 +95,10 @@ public class MainActivity extends BaseActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
+        if (id == R.id.login_signup_page) {
+            Intent intent = new Intent(this,LoginSignUpPage.class);
+            startActivity(intent);
+        }
         if (id == R.id.book_an_appointment) {
             Intent intent = new Intent(this,BookAnAppoinment.class);
             startActivity(intent);
@@ -119,6 +122,16 @@ public class MainActivity extends BaseActivity
             transaction.replace(R.id.parent_content, signUpp).addToBackStack(null).commit();
 
         }
+        else if (id == R.id.dashboard) {
+            DoctorList doctorList = new DoctorList();
+            transaction = fragmentManager.beginTransaction();
+            transaction.replace(R.id.parent_content, doctorList).addToBackStack(null).commit();
+
+        }
+        else if (id == R.id.dashboard2) {
+//            Intent intent = new Intent(this,RetrofitPost.class);
+//            startActivity(intent);
+        }
          else if (id == R.id.login){
             Login login = new Login();
             login.referance(this);
@@ -131,10 +144,9 @@ public class MainActivity extends BaseActivity
             transaction = fragmentManager.beginTransaction();
             transaction.replace(R.id.parent_content, inviteAndEarn).addToBackStack(null).commit();
         }
-         else if (id == R.id.dashboard){
-            DoctorList doctorList = new DoctorList();
-            transaction = fragmentManager.beginTransaction();
-            transaction.replace(R.id.parent_content, doctorList).addToBackStack(null).commit();
+         else if (id == R.id.doctor_profile){
+            Intent intent = new Intent(this,DoctorProfile.class);
+            startActivity(intent);
         }
         else if (id == R.id.lat_lang){
             CurrentLocation.getLastKnownLocation(this);

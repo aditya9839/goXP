@@ -1,5 +1,8 @@
 apply plugin: 'com.android.application'
 
+def APP_SECRET_KEY = '"' + AppSecretKey +'"' ?: "Define App Secret Key"
+def STRING  = 'String'
+
 android {
     compileSdkVersion 26
     buildToolsVersion "26.0.2"
@@ -10,6 +13,12 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        each { type ->
+            type.buildConfigField STRING, 'AppSecretKey' , APP_SECRET_KEY
+        }
+        manifestPlaceholders = [
+                'APP_SERCRET_KEY' : AppSecretKey
+        ]
     }
     buildTypes {
         release {
@@ -33,13 +42,14 @@ dependencies {
     compile 'com.android.support:design:26.+'
     compile 'com.intuit.sdp:sdp-android:1.0.5'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    testCompile 'junit:junit:4.12'
     compile 'com.msg91.sendotp.library:library:3.1'
     compile 'com.jakewharton:butterknife:8.8.1'
     compile 'com.squareup.okhttp3:logging-interceptor:3.9.1'
     compile 'com.squareup.okhttp3:okhttp:3.9.1'
     compile 'com.google.code.gson:gson:2.7'
     compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.android.support:support-v4:26.+'
+    testCompile 'junit:junit:4.12'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 }
 apply plugin: 'com.google.gms.google-services'

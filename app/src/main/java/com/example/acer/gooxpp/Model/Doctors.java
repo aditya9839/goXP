@@ -42,4 +42,5 @@ public class Doctors {
     public int getImage() {
         return image;
     }
+
 }

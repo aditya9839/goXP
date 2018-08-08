@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    tools:context="com.example.acer.gooxpp.Activity.Map">
+        <com.example.acer.gooxpp.Activity.CustomMapView
+            android:id="@+id/mapview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/open_in_google_maps"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:textAllCaps="false"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:paddingLeft="@dimen/_3sdp"
+            android:paddingRight="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_alignParentBottom="true"
+            android:shadowColor="#29000000"
+            android:shadowDy="3"
+            android:shadowRadius="6"
+            android:layout_alignParentRight="true"
+            android:fontFamily="sans-serif"
+            android:background="@drawable/transparent_button_background"
+            android:text="@string/open_in_google_maps"
+            android:layout_marginRight="@dimen/_4sdp" />
+
+        <Button
+            android:id="@+id/get_directions"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:shadowColor="#29000000"
+            android:shadowDy="3"
+            android:shadowRadius="6"
+            android:textAllCaps="false"
+            android:paddingLeft="@dimen/_6sdp"
+            android:paddingRight="@dimen/_6sdp"
+            android:fontFamily="sans-serif"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:background="@drawable/transparent_button_background"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/open_in_google_maps"
+            android:text="@string/get_directions"/>
+    </RelativeLayout>

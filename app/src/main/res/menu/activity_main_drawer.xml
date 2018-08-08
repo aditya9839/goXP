@@ -39,32 +39,41 @@
     <item android:title="@string/modules">
         <menu>
             <item
+                android:id="@+id/login_signup_page"
+                android:title="@string/loginwalapage" />
+            <item
+                android:id="@+id/doctor_profile"
+                android:title="@string/doctor_profile" />
+            <item
                 android:id="@+id/book_an_appointment"
                 android:title="@string/book_an_appointment" />
             <item
                 android:id="@+id/Msg91"
-                android:title="Msg91 OTP Verification" />
+                android:title="@string/msg91_otp_verification" />
             <item
                 android:id="@+id/lat_lang"
                 android:title="@string/current_lat_lang" />
             <item
                 android:id="@+id/otp"
-                android:title="OTP Fragment" />
+                android:title="@string/otp_fragment" />
             <item
                 android:id="@+id/card"
                 android:title="@string/cards" />
             <item
                 android:id="@+id/sign_up"
-                android:title="Sign Up Fragment" />
+                android:title="@string/sign_up_fragment" />
             <item
                 android:id="@+id/login"
-                android:title="Login Fragment" />
+                android:title="@string/login_fragment" />
             <item
                 android:id="@+id/invite_and_earn"
-                android:title="Invite And Earn Fragment" />
+                android:title="@string/invite_and_earn_fragment" />
             <item
                 android:id="@+id/dashboard"
                 android:title="@string/dashboard" />
+            <item
+                android:id="@+id/dashboard2"
+                android:title="@string/dashboard2" />
 
         </menu>
     </item>

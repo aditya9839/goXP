@@ -79,6 +79,7 @@
                     android:layout_height="@dimen/_40sdp">
                     <EditText
                         android:id="@+id/e1"
+                        android:textColorHint="@color/light_gray"
                         android:layout_width="wrap_content"
                         android:textAlignment="center"
                         android:layout_height="@dimen/_40sdp"
@@ -95,6 +96,7 @@
                         android:layout_marginStart="@dimen/_10sdp"
                         android:layout_weight="1"
                         android:hint="@string/_0"
+                        android:textColorHint="@color/light_gray"
                         android:maxLength="1"
                         android:textAlignment="center"
                         android:layout_width="wrap_content"
@@ -108,6 +110,7 @@
                         android:layout_weight="1"
                         android:maxLength="1"
                         android:hint="@string/_0"
+                        android:textColorHint="@color/light_gray"
                         android:textAlignment="center"
                         android:layout_width="wrap_content"
                         android:layout_height="@dimen/_40sdp"
@@ -118,6 +121,7 @@
                         android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:maxLength="1"
+                        android:textColorHint="@color/light_gray"
                         android:layout_height="@dimen/_40sdp"
                         android:layout_marginLeft="@dimen/_10sdp"
                         android:layout_marginStart="@dimen/_10sdp"
@@ -128,6 +132,7 @@
                     <EditText
                         android:id="@+id/e5"
                         android:layout_marginLeft="@dimen/_10sdp"
+                        android:textColorHint="@color/light_gray"
                         android:layout_marginStart="@dimen/_10sdp"
                         android:hint="@string/_0"
                         android:maxLength="1"
@@ -140,6 +145,7 @@
                     <EditText
                         android:id="@+id/e6"
                         android:hint="@string/_0"
+                        android:textColorHint="@color/light_gray"
                         android:layout_marginLeft="@dimen/_10sdp"
                         android:layout_marginStart="@dimen/_10sdp"
                         android:textAlignment="center"
@@ -153,6 +159,7 @@
                 </LinearLayout>
 
                 <Button
+                    android:id="@+id/submit"
                     android:layout_width="@dimen/_150sdp"
                     android:layout_height="@dimen/_40sdp"
                     android:layout_gravity="center"

@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -75,14 +76,8 @@ public class DoctorList extends Fragment {
 
         doctorsList = new ArrayList<>();
         recyclerView = (RecyclerView) v.findViewById(R.id.recyclerView);
-//        mcalldoctor =(Button) recyclerView.findViewById(R.id.callDoctor);
-//
-//        mcalldoctor.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//            alert(view);
-//            }
-//        });
+        Log.d("asd","asd"+recyclerView);
+
         Toast.makeText(getActivity(), ""+recyclerView+"  "+mcalldoctor, Toast.LENGTH_SHORT).show();
 
         recyclerView.setHasFixedSize(true);
@@ -104,7 +99,7 @@ public class DoctorList extends Fragment {
                         "MBBS",
                         3.7,
                         300,
-                        R.drawable.doc2));
+                        R.drawable.doctorimage));
         doctorsList.add(
                 new Doctors(
                         1,
@@ -119,7 +114,20 @@ public class DoctorList extends Fragment {
 
         //setting adapter to recyclerview
         recyclerView.setAdapter(adapter);
+
+//                mcalldoctor =(Button) recyclerView.findViewById(R.id.callDoctor);
+//
+//        mcalldoctor.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//            alert(view);
+//            }
+//        });
         return v;
+    }
+
+    public void ButtonClick(View view){
+
     }
 
 }

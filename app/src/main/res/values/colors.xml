@@ -10,5 +10,10 @@
     <color name="grey">#737070</color>
     <color name="blue">#50b4d9</color>
 
+    <color name="exp2">@color/colorAccent</color>
+    <color name="navbar">#cc064392</color>
+    <color name="ButtonColor">#d9212a</color>
+    <color name="light_gray">#858585</color>
+    <color name="lighter_gray">#dddcdc</color>
 
 </resources>
