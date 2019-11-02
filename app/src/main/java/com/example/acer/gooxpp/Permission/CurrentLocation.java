@@ -41,11 +41,21 @@ public class CurrentLocation {
         Location bestLocation = null;
 
         locationOn();
+        if (ActivityCompat.checkSelfPermission(parentActivity, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED || ActivityCompat.checkSelfPermission(parentActivity, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(parentActivity, new String[]{Manifest.permission.ACCESS_FINE_LOCATION,Manifest.permission.ACCESS_COARSE_LOCATION}, 1);
+            Log.d("", "getLastKnownLocation: ");
+        }
+
         for (String provider : providers) {
             if (ActivityCompat.checkSelfPermission(parentActivity, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(parentActivity, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                ActivityCompat.requestPermissions(parentActivity, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
+                ActivityCompat.requestPermissions(parentActivity, new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION}, 1);
+                Log.d("", "getLastKnownLocation: ");
             }
             Location l = mLocationManager.getLastKnownLocation(provider);
+
+//            while (l != null){
+//                l = mLocationManager.getLastKnownLocation(provider);
+//        }
             if (l == null) {
                 continue;
             }
@@ -57,6 +67,8 @@ public class CurrentLocation {
             Log.d("Location", "d :" + d + "  " + d1);
             Toast.makeText(parentActivity, "Latitude :"+d+"\nLongitude :"+d1, Toast.LENGTH_SHORT).show();
         }
+        Log.d("Location", "d :" + d + "  " + d1);
+
         Log.d("loc",""+bestLocation);
         return bestLocation;
     }

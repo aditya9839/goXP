@@ -25,10 +25,6 @@ import com.example.acer.gooxpp.R;
 
 import java.util.List;
 
-/**
- * Created by acer on 23-Jun-18.
- */
-
 public class DoctorAdapter extends RecyclerView.Adapter<DoctorAdapter.DoctorViewHolder> {
 
     private Context mCtx;
@@ -120,7 +116,5 @@ public class DoctorAdapter extends RecyclerView.Adapter<DoctorAdapter.DoctorView
 //            rating = itemView.findViewById(R.id.textViewRating);
 //            price = itemView.findViewById(R.id.textViewPrice);
         }
-
     }
-
 }

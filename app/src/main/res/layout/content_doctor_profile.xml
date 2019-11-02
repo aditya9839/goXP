@@ -15,7 +15,7 @@
         <TextView
             android:id="@+id/descrip"
             android:shadowColor="#000000"
-            android:shadowDy="1"
+            android:shadowDy="4"
             android:shadowRadius="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

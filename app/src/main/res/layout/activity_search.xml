@@ -59,8 +59,6 @@
                     android:padding="@dimen/_8sdp"
                     android:src="@drawable/pencil" />
             </RelativeLayout>
-
-
         </LinearLayout>
         <LinearLayout
             android:id="@+id/docTypeLayout"
